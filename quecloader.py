@@ -69,7 +69,7 @@ flat.createLabel(start.add(0x0),  "txm_module_preamble_id", True)
 flat.createLabel(start.add(0x4),  "txm_module_preamble_version_major", True)
 flat.createLabel(start.add(0x8),  "txm_module_preamble_version_minor", True)
 flat.createLabel(start.add(0xc),  "txm_module_preamble_preamble_size", True)
-flat.createLabel(start.add(0x10), "txm_module_preamble_shell_entry_function", True)
+flat.createLabel(start.add(0x10), "txm_module_preamble_application_module_id", True)
 flat.createLabel(start.add(0x14), "txm_module_preamble_property_flags", True)
 
 shell_entry = flat.toAddr(mem.getInt(start.add(0x18)))
